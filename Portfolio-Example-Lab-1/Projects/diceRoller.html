@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>Project 1: DiceRoller</title>
+
+<style>
+    body {
+        background-color: darkseagreen;
+    }
+</style>
+
+
+
+<body>
+    
+    <h1>Project 1: Dice Roller</h1>
+    
+    <hr>
+    <button onclick="rollD20()">Roll a d20!</button>
+    <p id="diceResults"></p>
+
+    <script>
+        function rollD20()  {
+            var rand = Math.floor((Math.random() * 20) + 1);
+            document.getElementById("diceResults").innerHTML = rand;
+        }
+    </script>
+    
+
+</body>
+</html>

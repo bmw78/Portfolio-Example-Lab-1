@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<title>Project 2: TextColorSwitcher</title>
+
+<style>
+    body {
+        background-color: mediumaquamarine;
+    }
+</style>
+
+
+
+<body>
+    
+    <h1>Project 2: Text Color Switcher</h1>
+    
+    <hr>
+    <button id="buttonHere" onclick="changeColor()">Change my color!</button>
+    
+    <p id="apology"></p>
+
+    <script>
+        function changeColor()  {
+            var elem = document.getElementById("buttonHere");
+            elem.style.background = "blue";
+            document.getElementById("apology").innerHTML = "Yeah, sorry, couldn't get the text to change, only the background.  :/";
+        }
+    </script>
+    
+
+</body>
+</html>

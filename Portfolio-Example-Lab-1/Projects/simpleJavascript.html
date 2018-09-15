@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+	<head>
+		<script type="text/javascript">
+			var itemNumber = 1;
+			function addColoredObject(event)
+			{
+				var list = document.getElementById('list1');
+				var newColoredObject = document.createElement('li');
+				itemNumber++;
+				var newText = document.createTextNode("Object " + itemNumber);
+				list.appendChild(newColoredObject);
+				newColoredObject.appendChild(newText);
+				randomColor();
+			}
+			function randomColor()
+			{
+				var color = ('#' + Math.random().toString(16).substr(-6));
+				document.body.style.color = color;
+				var color2 = ('#' + Math.random().toString(16).substr(-6));
+				document.body.style.background = color2;
+			}
+		</script>
+	</head>
+
+	<body id="body1" onmousedown="addColoredObject(event)">
+		<p>&emsp;Click in the document to add an object to the list & randomly change the color scheme.</p>
+	</body>
+
+	<hr>
+	<ul id="list1">
+		<li> Object 1 </li>
+	</ul>
+
+	<p>&emsp;Clicking below this line does nothing.</p>
+	<hr>
+</html>

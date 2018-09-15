@@ -1,0 +1,22 @@
+#profilePicture{
+    border: 10px solid black;
+    
+}
+body{
+    background-image: url("Pictures/dark-blue-Wallpaper-Widescreen-number-9Cw.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    
+}
+.centerHorizontal{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    
+}
+.dropVertical{
+    margin-top: 125px;
+    margin-bottom: auto;
+}
